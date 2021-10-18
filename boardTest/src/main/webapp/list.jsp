@@ -50,6 +50,6 @@
 	<input type="button" value="글 작성하기" class="button" onclick="location.href='form.jsp'">
 	<hr>
 	<a href="mypage.jsp">회원정보 수정</a>
-	<a href="listdo">메인으로</a>
+	<a href="list.do">메인으로</a>
 </body>
 </html>

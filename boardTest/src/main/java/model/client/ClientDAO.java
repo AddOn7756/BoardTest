@@ -117,7 +117,7 @@ public class ClientDAO {
 		try {
 			pstmt = conn.prepareStatement(sql_CHECK);
 			pstmt.setString(1, vo.getUserid());
-
+			
 			ResultSet rs = pstmt.executeQuery();
 			while(rs.next()) {
 				flag = true;
