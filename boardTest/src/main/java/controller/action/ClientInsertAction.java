@@ -26,12 +26,6 @@ public class ClientInsertAction implements Action{
 		cVO.setPw(request.getParameter("pw"));
 		cVO.setName(request.getParameter("name"));
 		
-		/*if(cDAO.checkID(cVO)==false) { 
-			response.setContentType("text/html; charset=UTF-8");
-	        PrintWriter out=response.getWriter();
-			out.println("<script>alert('회원가입 실패!');history.go(-1);</script>");
-		}*/
-		
 		if(!cDAO.insert(cVO)) { 
 			throw new IOException("회원가입 오류 발생");
 		}
